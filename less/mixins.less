@@ -1,10 +1,16 @@
+// MY FLEXBOX MIXIN
 .flexBox(@justify, @align, @direction){
     display: flex;
     justify-content: @justify;
     align-items: @align;
     flex-direction: @direction;
 }
+// GENERAL LINK STYLE
 .linkStyle(){
     text-decoration: none;
     color: @font-color;
+}
+// DASHED LINE ACROSS PAGE
+.borderBottom() {
+    border-bottom: 2px dashed @navigation-border;
 }
