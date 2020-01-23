@@ -269,3 +269,19 @@ nav .nav-logo h1 {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #FFFFFF;
+  font-size: 2rem;
+  background-color: #038388;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  height: 44px;
+  width: 80%;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: #04b3ba;
+}
