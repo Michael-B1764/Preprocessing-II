@@ -346,6 +346,7 @@ nav .nav-logo h1 {
 .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
+  border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
@@ -386,4 +387,63 @@ nav .nav-logo h1 {
   .home .content-pick .destination .btn {
     width: 100%;
   }
+}
+.home .pick-form {
+  text-align: center;
+  margin: 5% auto;
+}
+.home .pick-form .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.home .pick-form .form-container .form-trip-type {
+  width: 70%;
+  margin: 2% 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.home .pick-form .form-container .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #FFFFFF;
+  font-size: 2rem;
+  background-color: #038388;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  height: 44px;
+  width: 80%;
+  font-size: 1.5rem;
+  width: 30%;
+}
+.home .pick-form .form-container .btn:hover {
+  background-color: #04b3ba;
+}
+.home .pick-form .form-container .form-instructions,
+.home .pick-form .form-container .form-info {
+  width: 70%;
+  margin: 2% 15%;
+  text-align: center;
+}
+.home .pick-form .form-container .form-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: #FFFFFF;
+  font-size: 2rem;
+  background-color: #038388;
+  border-radius: 15px;
+  border: 1px solid #C0C0C0;
+  height: 44px;
+  width: 80%;
+  width: 20%;
+}
+.home .pick-form .form-container .form-submit:hover {
+  background-color: #04b3ba;
 }

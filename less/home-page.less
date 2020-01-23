@@ -107,6 +107,7 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
@@ -134,4 +135,33 @@
       }// btn
     }// .destination
   }// .content-pick
+
+  .pick-form {
+    text-align: center;
+    margin:5% auto;
+    .form-container {
+      .flexBox(center, center, column);
+    
+
+      .form-trip-type{
+        width:70%;
+        margin:2% 15%;
+        .flexBox(space-between, center, row);
+      }// .form-trip-type
+      .btn{
+        .mainBtnStyle(@eastern-blue, @white);
+        font-size: 1.5rem;
+        width:30%;
+      }// .btn
+      .form-instructions, .form-info {
+        width:70%;
+        margin:2% 15%;
+        text-align: center;
+      }// .form-instructions, .form-info
+      .form-submit {
+        .mainBtnStyle(@eastern-blue, @white);
+        width:20%;
+      }// .form-submit
+    }//.form-container
+  }// .pick-form
 }// home
