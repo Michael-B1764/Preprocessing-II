@@ -1,7 +1,14 @@
 .home {
   .header{
+
+    @media @mobile {
+      width:90%;
+      margin:0 5% 5%;
+    }// MQ mobile
+
     img{
       margin-bottom: 3%;
+
     }// img
     .borderBottom();
   }// .header
@@ -12,19 +19,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      width:100%;
+      margin:5%;
+    }// MQ mobile
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:90%;
+        margin:auto 0%;
+      }// MQ mobile
+      
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width:100%;
+        margin:auto 0;
+      }// MQ mobile
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width:90%;
+          margin:auto 0;
+        }// MQ mobile
       }
     }
   }
@@ -33,20 +59,40 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      width:100%;
+      margin:5%;
+      .flexBox(center, center, column-reverse)
+    }// MQ mobile
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      @media @mobile {
+        width:90%;
+        margin:auto 0;
+        padding:0;
+      }// MQ mobile
+    }// .text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+      }// MQ mobile
+
+    }// .img-content
+  }// .inverse-content
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    
 
     img {
       border-radius: 10px;
@@ -59,11 +105,26 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      padding:5%;
+    }// MQ mobile
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {
+        width:75%;
+        margin:3% 12.5%;
+      }// MQ mobile
+
       .btn{
         .mainBtnStyle(@eastern-blue, @white);
+
+        @media @mobile {
+          width:100%;
+        }// MQ mobile
       }// btn
     }// .destination
   }// .content-pick
