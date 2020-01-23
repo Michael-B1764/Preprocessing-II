@@ -1,9 +1,27 @@
 nav {
+    width:100%;
+    padding: 2% 5%;
+    border: 2px dashed @navigation-border;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     .flexBox(space-between, center, row-reverse);
     .nav-links {
-        width:40%;
-    }
+        .flexBox(space-evenly, center, row);
+        width:30%;
+    }// .nav-links
+    a   {
+        .linkStyle();
+        font-size: 2rem;
+        &:hover{
+            color: @silver;
+        }// &:hover
+    }// a
     .nav-logo {
-        width:40%;
-    }
-}
+        width:30%;
+        .flexBox(space-evenly, center, row);
+        h1 {
+            font-size: 5rem;
+        }// h1
+    }// .nav-logo
+}// nav
