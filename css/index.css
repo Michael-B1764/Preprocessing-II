@@ -174,19 +174,30 @@ img {
 }
 nav {
   width: 100%;
-  padding: 2% 5%;
+  padding: 2% 15%;
   border-bottom: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
 nav .nav-links {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: row;
-  width: 30%;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  nav .nav-links {
+    width: 100%;
+  }
 }
 nav a {
   text-decoration: none;
@@ -203,8 +214,19 @@ nav .nav-logo {
   align-items: center;
   flex-direction: row;
 }
+@media (max-width: 500px) {
+  nav .nav-logo {
+    width: 100%;
+    margin: 3% auto;
+  }
+}
 nav .nav-logo h1 {
   font-size: 5rem;
+}
+@media (max-width: 500px) {
+  nav .nav-logo h1 {
+    font-size: 3rem;
+  }
 }
 .footer {
   width: 100%;
