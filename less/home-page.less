@@ -1,4 +1,17 @@
 .home {
+  .header{
+
+    @media @mobile {
+      width:90%;
+      margin:0 5% 5%;
+    }// MQ mobile
+
+    img{
+      margin-bottom: 3%;
+
+    }// img
+    .borderBottom();
+  }// .header
 
   .content-section {
     margin: 30px 0;
@@ -6,19 +19,38 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    @media @mobile {
+      width:100%;
+      margin:5%;
+    }// MQ mobile
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile {
+        width:90%;
+        margin:auto 0%;
+      }// MQ mobile
+      
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile {
+        width:100%;
+        margin:auto 0;
+      }// MQ mobile
+
       img {
         border-radius: 10px;
+
+        @media @mobile {
+          width:90%;
+          margin:auto 0;
+        }// MQ mobile
       }
     }
   }
@@ -27,20 +59,45 @@
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
 
+    @media @mobile {
+      width:90%;
+      .flexBox(center, space-around, column-reverse)
+    }// MQ mobile
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+
+      @media @mobile {
+        width:100%;
+        margin:0 0;
+        padding:0;
+      }// MQ mobile
+    }// .text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+
+      @media @mobile {
+        width:100%;
+        padding:0;
+        img{
+          width:100%;
+        }
+      }// MQ mobile
+
+    }// .img-content
+  }// .inverse-content
 
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+
+    @media @mobile {
+      width:90%;
+      margin:0 5% 5%;
+    }// MQ mobile
 
     img {
       border-radius: 10px;
@@ -50,12 +107,61 @@
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+
+    @media @mobile {
+      flex-direction: column;
+      width:90%;
+      margin:0 5%;
+    }// MQ mobile
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+
+      @media @mobile {
+        width:75%;
+        margin:3% 12.5%;
+      }// MQ mobile
+
+      .btn{
+        .mainBtnStyle(@eastern-blue, @white);
+
+        @media @mobile {
+          width:100%;
+        }// MQ mobile
+      }// btn
+    }// .destination
+  }// .content-pick
+
+  .pick-form {
+    text-align: center;
+    margin:5% auto;
+    .form-container {
+      .flexBox(center, center, column);
+    
+
+      .form-trip-type{
+        width:70%;
+        margin:2% 15%;
+        .flexBox(space-between, center, row);
+      }// .form-trip-type
+      .btn{
+        .mainBtnStyle(@eastern-blue, @white);
+        font-size: 1.5rem;
+        width:30%;
+      }// .btn
+      .form-instructions, .form-info {
+        width:70%;
+        margin:2% 15%;
+        text-align: center;
+      }// .form-instructions, .form-info
+      .form-submit {
+        .mainBtnStyle(@eastern-blue, @white);
+        width:20%;
+      }// .form-submit
+    }//.form-container
+  }// .pick-form
 }// home

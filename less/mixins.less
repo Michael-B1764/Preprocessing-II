@@ -1,1 +1,30 @@
-// Mixins in here
+// MY FLEXBOX MIXIN  .flexBox(space-between, center, row-reverse);
+.flexBox(@justify, @align, @direction){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+// GENERAL LINK STYLE
+.linkStyle(){
+    text-decoration: none;
+    color: @font-color;
+}
+// DASHED LINE ACROSS PAGE
+.borderBottom() {
+    border-bottom: 2px dashed @navigation-border;
+}
+.mainBtnStyle(@btnColor, @fontColor) {
+    .flexBox(center, center, row);
+    color: @fontColor;
+    font-size: 2rem;
+    background-color: @btnColor;
+    border-radius: 15px;
+    border:1px solid @silver;
+    height:44px;
+    width:80%;
+    
+    &:hover {
+        background-color:lighten(@btnColor, 10%);
+    }
+}

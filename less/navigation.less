@@ -1,1 +1,48 @@
-// Navigation Styles here
+nav {
+    width:100%;
+    padding: 2% 15%;
+    .borderBottom();
+    .flexBox(space-between, center, row-reverse);
+
+    @media @mobile{
+        flex-direction: column-reverse;
+        padding:0;
+    }// MQ mobile
+
+    .nav-links {
+        .flexBox(space-evenly, center, row);
+        width:40%;
+
+        @media @mobile {
+            width:100%;
+            margin-bottom: 2%;
+        }// MQ mobile
+    }// .nav-links
+
+    a   {
+        .linkStyle();
+        font-size: 2rem;
+        &:hover{
+            color: @silver;
+        }// &:hover
+    }// a
+
+    .nav-logo {
+        width:30%;
+        .flexBox(space-evenly, center, row);
+
+        @media @mobile {
+            width:100%;
+            margin:3% auto;
+        }// MQ mobile
+
+        h1 {
+            font-size: 5rem;
+
+            @media @mobile {
+                font-size: 3rem;
+            }// MQ mobile
+        }// h1
+    }// .nav-logo
+
+}// nav
